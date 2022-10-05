@@ -1,0 +1,18 @@
+{% block content %}
+<h1>Register</h1>
+<h4>Enter Student Information below</h4>
+<form action="/addStudentOrganisation" method="POST">
+  <label for="key" class="form-label">Name</label>
+  <input type="text" class="form-control" name="name" id="name" />
+  <label for="value" class="form-label mt-3">Organization</label>
+  <select class="form-control" name="organization" id="organization">
+    <option>Select an organization</option>
+    <option value="Charlotte Hack">Charlotte Hack</option>
+    <option value="Code9">Code9</option>
+    <option value="CompSci Club">CompSci Club</option>
+    <option value="Cool Coders">Cool Coders</option>
+    <option value="Pragmatic Programmers">Pragmatic Programmers</option>
+  </select>
+  <button type="submit">Register</button>
+</form>
+{% endblock %}
