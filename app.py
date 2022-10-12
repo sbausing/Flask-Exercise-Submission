@@ -5,6 +5,7 @@ import datetime
 
 app = Flask(__name__)
 global studentOrganisationDetails
+studentOrganisationDetails = {'Tom':'Charlotte Hack', 'Hunter':'Code9'}
 # Assign default 5 values to studentOrganisationDetails for Application  3.
 
 
@@ -68,7 +69,6 @@ def displayRegistrationPage():
     organization = request.form['organization']
 
     # Append this value to studentOrganisationDetails
-    studentOrganisationDetails = {'Tom':'Charlotte Hack', 'Hunter':'Code9'}
     if studentName != "" and organization != "" and organization in organizations:
         studentOrganisationDetails[studentName] = organization
 
